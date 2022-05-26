@@ -5,12 +5,12 @@ app = Flask('__name__')
 
 @app.route('/')
 def index():
-    return render_template('/index.html')
+    return render_template('index.html')
 
 
 @app.route('/unifran')
 def unifran():
-    return render_template('unifran/unifran.html')
+    return render_template('unifran.html')
 
 
 if __name__ == '__name__':
